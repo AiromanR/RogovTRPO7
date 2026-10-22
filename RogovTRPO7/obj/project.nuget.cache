@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "sNkgpnKnCh2fdZ41Hsmq3ytpjvNtn5rohiHIcskdwq28TTnBgrZVT4r4JpYf3BSB6+wiKFnofF7emg8YyP6Tag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\st310-05\\Desktop\\RogovTRPO7\\RogovTRPO7\\RogovTRPO7.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\st310-05\\.nuget\\packages\\materialdesigncolors\\5.3.0\\materialdesigncolors.5.3.0.nupkg.sha512",
+    "C:\\Users\\st310-05\\.nuget\\packages\\materialdesignthemes\\5.3.0\\materialdesignthemes.5.3.0.nupkg.sha512",
+    "C:\\Users\\st310-05\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
+  ],
+  "logs": []
+}

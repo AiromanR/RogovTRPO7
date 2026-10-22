@@ -1,0 +1,58 @@
+﻿<Page x:Class="RogovTRPO7.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RogovTRPO7.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            
+        </Grid.RowDefinitions>
+        <ListView ItemsSource="{Binding Restaurants}" Width="350"
+                  HorizontalContentAlignment="Stretch">
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <DockPanel>
+                        <StackPanel DockPanel.Dock="Left" Margin="0 0 10 0">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Название: "></TextBlock>
+                                <TextBlock Text="{Binding Name}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Кухня: "></TextBlock>
+                                <TextBlock Text="{Binding Cuisine}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Рейтинг: "></TextBlock>
+                                <TextBlock Text="{Binding Rating}"></TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <StackPanel DockPanel.Dock="Right">
+                            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                                <TextBlock Text="Средний чек: "></TextBlock>
+                                <TextBlock Text="{Binding AverageCheck}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                                <TextBlock Text="Открыто: "></TextBlock>
+                                <TextBlock Text="{Binding IsOpen}"></TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </DockPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+        <StackPanel Height="auto" HorizontalAlignment="Center" Orientation="Horizontal"  Grid.Row="2" Margin="0 12 0 0">
+            <Button Content="Добавить" Margin="0 0 8 0"></Button>
+            <Button Content="Редактировать" Margin="0 0 8 0"></Button>
+            <Button Content="Удалить" Margin="0 0 8 0"></Button>
+        </StackPanel>
+    </Grid>
+</Page>
