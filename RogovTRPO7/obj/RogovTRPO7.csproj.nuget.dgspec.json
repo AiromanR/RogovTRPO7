@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\st310-05\\Desktop\\RogovTRPO7\\RogovTRPO7\\RogovTRPO7.csproj": {}
+    "C:\\Users\\andre\\Desktop\\RogovTRPO7\\RogovTRPO7\\RogovTRPO7.csproj": {}
   },
   "projects": {
-    "C:\\Users\\st310-05\\Desktop\\RogovTRPO7\\RogovTRPO7\\RogovTRPO7.csproj": {
+    "C:\\Users\\andre\\Desktop\\RogovTRPO7\\RogovTRPO7\\RogovTRPO7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\st310-05\\Desktop\\RogovTRPO7\\RogovTRPO7\\RogovTRPO7.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Desktop\\RogovTRPO7\\RogovTRPO7\\RogovTRPO7.csproj",
         "projectName": "RogovTRPO7",
-        "projectPath": "C:\\Users\\st310-05\\Desktop\\RogovTRPO7\\RogovTRPO7\\RogovTRPO7.csproj",
-        "packagesPath": "C:\\Users\\st310-05\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\st310-05\\Desktop\\RogovTRPO7\\RogovTRPO7\\obj\\",
+        "projectPath": "C:\\Users\\andre\\Desktop\\RogovTRPO7\\RogovTRPO7\\RogovTRPO7.csproj",
+        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andre\\Desktop\\RogovTRPO7\\RogovTRPO7\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\st310-05\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,8 +25,8 @@
           "net8.0-windows"
         ],
         "sources": {
-          "C:\\Packages": {},
-          "C:\\Program Files\\dotnet\\library-packs": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
@@ -43,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -73,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.319/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

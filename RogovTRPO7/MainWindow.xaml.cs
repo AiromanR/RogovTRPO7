@@ -20,5 +20,15 @@ namespace RogovTRPO7
         {
             InitializeComponent( );
         }
+
+        private void Frame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+            if (e.Content is Page currentPage)
+            {
+                this.Title = currentPage.Title;
+            }
+
+        }
     }
 }

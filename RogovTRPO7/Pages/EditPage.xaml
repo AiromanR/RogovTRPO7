@@ -4,11 +4,36 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:RogovTRPO7.Pages"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="550" d:DesignWidth="800"
       Title="EditPage">
-
-    <Grid>
-        
-    </Grid>
+    <StackPanel Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="12" Width="400" >
+        <Button Style="{StaticResource MaterialDesignRaisedButton}"
+                    Content="Вернуться" Click="BtnBack_Click" Margin="12 0 12 12"/>
+        <TextBox Width="auto" Margin="12 0 12 12"
+                     materialDesign:HintAssist.Hint="Название"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                     Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Width="auto" Margin="12 0 12 12"
+                     materialDesign:HintAssist.Hint="Кухня"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                     Text="{Binding Cuisine, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Width="auto" Margin="12 0 12 12"
+                     materialDesign:HintAssist.Hint="Рейтинг"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                     Text="{Binding Rating, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Width="auto" Margin="12 0 12 12"
+                     materialDesign:HintAssist.Hint="Средний чек"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                     Text="{Binding AverageCheck, UpdateSourceTrigger=PropertyChanged}"/>
+        <CheckBox Width="auto" Margin="12 0 12 12"
+                     Content="Открыто?"
+                     Style="{StaticResource MaterialDesignCheckBox}"
+                     IsChecked="{Binding IsOpen, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Width="250" Margin="12 0 12 12" Style="{StaticResource MaterialDesignRaisedButton}"
+                    Content="Сохранить Put" Click="BtnPostPut_Click"/>
+        <Button Width="250" Margin="12 0" Style="{StaticResource MaterialDesignRaisedButton}"
+                    Content="Сохранить Patch" Click="BtnPatch_Click"/>
+    </StackPanel>
 </Page>
